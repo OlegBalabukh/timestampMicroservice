@@ -7,8 +7,6 @@ router.get('/', function (req, res, next) {  // we don't need next (callback) in
 });
 
 router.get('/:time', function (req, res) {
-  //var data = { time: req.params.time };
-  //res.json(data);
   function unixToNatural(unix) {
     var date = new Date(unix * 1000); // milliseconds
     var months = {
@@ -35,8 +33,8 @@ router.get('/:time', function (req, res) {
   }
 
   if (!isNaN(req.params.time)) {
-    var unixToNaturalDate = unixToNatural(req.params.time); // seconds
-    var answer1 = { unix: req.params.time, natural: unixToNaturalDate };
+    var naturalDate = unixToNatural(req.params.time); // seconds
+    var answer1 = { unix: req.params.time, natural: naturalDate };
     res.json(answer1);
   } else {
     var naturalDateToUnix = new Date(req.params.time); // should be in milliseconds
