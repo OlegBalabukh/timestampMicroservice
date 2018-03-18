@@ -50,10 +50,12 @@ If the result you see is  ```node ./bin/www``` - the local server is running
 
 **13.** Delete unnecessary packages from boilerplate (initial) version of *package.json*.
 Type from project folder in terminal:
-```npm uninstall --save body-parser cookie-parser serve-favicon
+```
+npm uninstall --save body-parser cookie-parser serve-favicon
 ```
 Do not forget to remove uninstalled packages from **app.js** to avoid an error starting server next time. Additional packages can be installed in the same way:
-```npm install --save body-parser cookie-parser serve-favicon
+```
+npm install --save body-parser cookie-parser serve-favicon
 ```
 **14.** Remove unnecessary code from other files that uses uninstalled packages or just won't be in use. This operation won't cause any errors.  
 
@@ -88,9 +90,8 @@ Deploying the app on heroku:
 ```
 with current versions of *node* and *npm* installed in your system. Check with ``` node -v, npm -v ```
 
-4. *Heroku* doesn't know what command is needed to run the app, so create a *Procfile* and write the command there:
-```web: node ./bin/www
-```
+4. *Heroku* doesn't know what command is needed to run the app, so create a *Procfile* and write the command there: ```web: node ./bin/www```
+
 5. Add commit:
 ```git add .
 git commit -m "configure for deployment"
