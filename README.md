@@ -1,9 +1,9 @@
 # **Timestamp Microservice**
 
- This is my first FCC Back-End Project and a simple full stack JavaScript app that accepts a  parameter from user (unix timestamp or a natural language date) and returns both the Unix timestamp and the natural language form of that date.
+This is my first FCC Back-End Project and a simple full stack JavaScript app that accepts a  parameter from user (unix timestamp or a natural language date) and returns both the Unix timestamp and the natural language form of that date.
 
 ## I. Prerequisites (Environment Setup)
-    1. _Install_: atom editor or other, node.js (npm). *Check*: __node -v__, **npm -v**
+1. *Install*: atom editor or other, node.js (npm). *Check*: **node -v**, **npm -v**
     2. Create *node_projects* folder   
     3. Create boilerplate code with express-generator: **npm -g install express-generator**
     4. Go into folder *node_projects* from command line
