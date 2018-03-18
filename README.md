@@ -22,19 +22,20 @@ This is my first FCC Back-End Project and a simple full stack JavaScript app tha
 9. Install dependencies: **npm install** (creates *node_modules* folder with dependencies)
 
 10. Make first commit to a project with commands:
+```
 **git init
 git add .
 git commit -m "initial commit"**
-
+```
 11. Run local server from project folder with one of two commads:
 **npm start**
 **node ./bin/www**
 If the result you see is  *node ./bin/www* - the local server is running
 
 12. Open app (boilerplate code so far) in browser: **localhost:3000**
-+ Project's boilerplate code:
-*bin* folder - where the server is created
-*public* folder - includes static data for project (images, style sheets, js files etc.)
+    Project's boilerplate code:
+    + *bin* folder - where the server is created
+    + *public* folder - includes static data for project (images, style sheets, js files etc.)
 *routs* folder - to handle all routs (what happens when we go to home page, other pages)
 *views* folder - all html that the user see
 *app.js* file - main application file
