@@ -15,7 +15,7 @@ This is my first FCC Back-End Project and a simple full stack JavaScript app tha
 
 6. Go into folder (project) *timestampMicroservice* from command line
 
-7. Open project with atom editor: **atom .**
+7. Open project with atom editor: ```atom .```
 
 8. Create *.gitignore* file with "node_modules/" inside to avoid committing dependencies
 
@@ -23,9 +23,9 @@ This is my first FCC Back-End Project and a simple full stack JavaScript app tha
 
 10. Make first commit to a project with commands:
 ```
-**git init
+git init
 git add .
-git commit -m "initial commit"**
+git commit -m "initial commit"
 ```
 11. Run local server from project folder with one of two commads:
 **npm start**
@@ -50,15 +50,22 @@ If the result you see is  *node ./bin/www* - the local server is running
 
 13. Delete unnecessary packages from boilerplate (initial) version of package.json.
 Type from project folder in terminal:
-**npm uninstall --save body-parser cookie-parser serve-favicon**
+
+**```
+npm uninstall --save body-parser cookie-parser serve-favicon
+```**
 Do not forget to remove uninstalled packages from *app.js* to avoid an error starting server next time. Additional packages can be installed in the same way:
-**npm install --save body-parser cookie-parser serve-favicon**
+```
+npm install --save body-parser cookie-parser serve-favicon
+```
 
 14. Remove unnecessary code from *app.js* and other files that uses uninstalled packages or just won't be in use. This operation won't cause any errors.  
 
 15. Make second commit after editing:
-**git add .
-git commit -m "remove unnecessary modules"**
+```
+git add .
+git commit -m "remove unnecessary modules"
+```
 
 You should always restart the server after editing .js files. For other files like .html (.jade), .css etc simple "Ctrl+S" will be enough. Now the working environment is ready and boilerplate code has been edited for the project's needs, you can finally:) start coding.
 
