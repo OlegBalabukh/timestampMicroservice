@@ -3,9 +3,9 @@
 This is my first FCC Back-End Project and a simple full stack JavaScript app that accepts a  parameter from user (unix timestamp or a natural language date) and returns both the Unix timestamp and the natural language form of that date.
 
 ## I. Prerequisites (Environment Setup)
-1. **Install**: atom editor or other, node.js (npm). **Check**: ```node -v, npm -v```
+**1.** **Install**: atom editor or other, node.js (npm). **Check**: ```node -v, npm -v```
 
-2. Create **node_projects** folder   
+**2.** Create **node_projects** folder   
 
 3. Create boilerplate code with express-generator: ```npm -g install express-generator```
 
@@ -79,6 +79,7 @@ Pass a string as a parameter which is one of two form of date : unix timestamp (
 3. Any other input returns value of 'null' for unix timestamp and natural language date.
 
 **Note:** natural language date *always* returns *one* unix timestamp - at *00:00:00 am*, but *86400* unix timestamps return *one* natural language date. In other words, each date has 86400 unix timestamps because unix time measured in seconds and each date has 24 hours or 86400 seconds.
+
 **For example:**
 'October 16, 2016' returns '1476576000' (00:00:00 am), but 86400 unix timestamps from '1476576000' (00:00:00 am) to '1476662399' (23:59:59 pm) return the  same date - 'October 16, 2016'.
 
@@ -94,7 +95,12 @@ Deploying the app on heroku:
            }
 ```
 with current versions of *node* and *npm* installed in your system. Check with ``` node -v, npm -v ```
-4. *Heroku* doesn't know what command is needed to run the app, so create a *Procfile* and run the command there (```web: node ./bin/www```).
+
+4. *Heroku* doesn't know what command is needed to run the app, so create a *Procfile* and write the command there:
+```
+web: node ./bin/www
+```
+
 5. Add commit:
 ```
 git add .
@@ -107,6 +113,7 @@ heroku create fcc-backend-1-timestamp
 ```
 where *fcc-backend-1-timestamp* is a name of the project on heroku.
 You'll get the url with project like this: *https://fcc-backend-1-timestamp.herokuapp.com*
+
 7. Download to *Github*: instead of ```git push origin master``` (as usual), use ```git push heroku master``` or use *git-plus* package if you work in *atom editor*; shortcut keys: ```Ctrl + Shift + AA```
 
 ## IV. Authors
