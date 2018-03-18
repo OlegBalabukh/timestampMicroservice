@@ -33,20 +33,20 @@ git commit -m "initial commit"**
 If the result you see is  *node ./bin/www* - the local server is running
 
 12. Open app (boilerplate code so far) in browser: **localhost:3000**
-    Project's boilerplate code:
++ Project's boilerplate code:
     + *bin* folder - where the server is created
     + *public* folder - includes static data for project (images, style sheets, js files etc.)
-*routs* folder - to handle all routs (what happens when we go to home page, other pages)
-*views* folder - all html that the user see
-*app.js* file - main application file
-*package.json* file - info about current project + vital dependencies to be installed
-*package-lock.json* file - info about installed dependencies
+    + *routs* folder - to handle all routs (what happens when we go to home page, other pages)
+    + *views* folder - all html that the user see
+    + *app.js* file - main application file
+    + *package.json* file - info about current project + vital dependencies to be installed
+    + *package-lock.json* file - info about installed dependencies
 + Other stuff (created by dev):
-*.git* folder - when you create a git repo, using git init, git creates this folder. It contains all the informations needed for git to work.
-*node_modules* folder - includes all installed dependencies
-*README.md* file - project description + some other important info
-*gitignore* file - includes files and folders that have to be omitted during commit
-*Procfile* - in this case - additional file to ensure project deployment on heroku
+    + *.git* folder - when you create a git repo, using git init, git creates this folder. It contains all the informations needed for git to work.
+    + *node_modules* folder - includes all installed dependencies
+    + *README.md* file - project description + some other important info
+    + *gitignore* file - includes files and folders that have to be omitted during commit
+    + *Procfile* - in this case - additional file to ensure project deployment on heroku
 
 13. Delete unnecessary packages from boilerplate (initial) version of package.json.
 Type from project folder in terminal:
